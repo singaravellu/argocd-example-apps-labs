@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-config
+  namespace: default
+data:
+  APP_NAME: "guestbook"
+  APP_ENV: "development"
+  LOG_LEVEL: "info"
+  SERVER_PORT: "8080"
+  DATABASE_HOST: "mysql.default.svc.cluster.local"
